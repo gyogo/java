@@ -1,0 +1,4 @@
+
+module HelloWorld {
+	system.out.print("HelloWolrd");
+}
