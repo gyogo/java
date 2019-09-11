@@ -9,6 +9,7 @@ public class GUI1_JFrame {
         int 화h = screenSize.height;
         int 창w=400;
         int 창h=200;
+
         frame.setPreferredSize(new Dimension(창w, 창h));
         frame.setLocation((화w-창h)/2,(화h-창h)/2);
         JPanel panel = new JPanel();
