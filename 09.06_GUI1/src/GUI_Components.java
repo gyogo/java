@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GUI_Components {
     public static void main(String[] args) {
@@ -19,6 +21,12 @@ public class GUI_Components {
         JTextField tf0 = new JTextField("JTextField");
         JTextArea ta0 = new JTextArea(2,10);
 
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                button.setText("Cliked");
+            }
+        });
         panel.add(lb);
         panel.add(button);
         panel.add(ck1);
